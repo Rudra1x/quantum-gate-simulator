@@ -10,3 +10,4 @@ import qiskit
 st.write("All libraries imported successfully!")
 except ImportError as e:
 st.error(f"Import error: {e}")
+pip install pylatexenc
