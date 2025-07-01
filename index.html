@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Portfolio | Advanced Quantum Computing Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Quantum Particles Background -->
+    <div id="quantum-bg"></div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="quantum-loader">
+            <div class="quantum-ring"></div>
+            <div class="quantum-ring"></div>
+            <div class="quantum-ring"></div>
+            <div class="loading-text">Initializing Quantum State...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="quantum-symbol">Ψ</span>
+                <span class="logo-text">QuantumDev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#projects" data-section="projects">Projects</a></li>
+                <li><a href="#skills" data-section="skills">Skills</a></li>
+                <li><a href="#research" data-section="research">Research</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="quantum-title">
+                    <h1 class="glitch-text" data-text="Quantum Computing Specialist">
+                        Quantum Computing Specialist
+                    </h1>
+                    <div class="subtitle">
+                        <span class="typing-text"></span>
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+                
+                <div class="quantum-visual">
+                    <div class="bloch-sphere">
+                        <div class="sphere"></div>
+                        <div class="axis x-axis"></div>
+                        <div class="axis y-axis"></div>
+                        <div class="axis z-axis"></div>
+                        <div class="quantum-state"></div>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Quantum Circuits Built</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Research Papers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="99">0</div>
+                        <div class="stat-label">Quantum Fidelity %</div>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <button class="btn-primary quantum-btn" onclick="navigateToSection('projects')">
+                        <span>Explore Quantum Projects</span>
+                        <div class="quantum-ripple"></div>
+                    </button>
+                    <button class="btn-secondary" onclick="navigateToSection('contact')">
+                        <i class="fas fa-download"></i> Download Resume
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About the Quantum Explorer</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="quantum-profile">
+                        <div class="profile-image">
+                            <div class="quantum-aura"></div>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Quantum Specialist" />
+                        </div>
+                        <div class="profile-info">
+                            <h3>Quantum Computing Researcher & Developer</h3>
+                            <p class="bio">
+                                Passionate quantum computing specialist with expertise in quantum algorithms, 
+                                circuit optimization, and quantum machine learning. Dedicated to pushing the 
+                                boundaries of quantum information science and developing practical quantum solutions.
+                            </p>
+                            <div class="expertise-tags">
+                                <span class="tag">Quantum Algorithms</span>
+                                <span class="tag">Qiskit</span>
+                                <span class="tag">Quantum ML</span>
+                                <span class="tag">Circuit Design</span>
+                                <span class="tag">Quantum Error Correction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quantum-journey">
+                    <h3>Quantum Journey Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h4>Advanced Quantum Research</h4>
+                                <p>Leading research in quantum gate optimization and noise mitigation</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h4>Quantum Circuit Simulator</h4>
+                                <p>Developed comprehensive quantum gate simulator with visualization</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h4>Quantum Computing Certification</h4>
+                                <p>Achieved IBM Qiskit Developer certification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Quantum Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-preview">
+                        <div class="quantum-circuit-demo"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Quantum Gate Simulator</h3>
+                        <p>Advanced quantum circuit simulator with real-time visualization, Bloch sphere representation, and comprehensive state analysis.</p>
+                        <div class="tech-stack">
+                            <span>Qiskit</span>
+                            <span>Streamlit</span>
+                            <span>Python</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" onclick="launchSimulator()">
+                                <i class="fas fa-play"></i> Launch Simulator
+                            </button>
+                            <button class="btn-code">
+                                <i class="fab fa-github"></i> View Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <div class="quantum-algorithm-viz"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Quantum Algorithm Visualizer</h3>
+                        <p>Visual representation of famous quantum algorithms including Shor's, Grover's, and quantum teleportation.</p>
+                        <div class="tech-stack">
+                            <span>Qiskit</span>
+                            <span>D3.js</span>
+                            <span>WebGL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <div class="quantum-ml-demo"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Quantum Machine Learning</h3>
+                        <p>Implementation of quantum neural networks and variational quantum eigensolvers for optimization problems.</p>
+                        <div class="tech-stack">
+                            <span>PennyLane</span>
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <div class="quantum-error-correction"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Quantum Error Correction</h3>
+                        <p>Research and implementation of quantum error correction codes for fault-tolerant quantum computing.</p>
+                        <div class="tech-stack">
+                            <span>Qiskit</span>
+                            <span>Cirq</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Quantum Expertise</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Quantum Frameworks</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Qiskit</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Cirq</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">PennyLane</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">C++</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Quantum Concepts</h3>
+                    <div class="quantum-concepts">
+                        <div class="concept-item">
+                            <i class="fas fa-atom"></i>
+                            <span>Quantum Gates</span>
+                        </div>
+                        <div class="concept-item">
+                            <i class="fas fa-link"></i>
+                            <span>Entanglement</span>
+                        </div>
+                        <div class="concept-item">
+                            <i class="fas fa-wave-square"></i>
+                            <span>Superposition</span>
+                        </div>
+                        <div class="concept-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Error Correction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Research & Publications</h2>
+            <div class="research-grid">
+                <div class="research-paper">
+                    <div class="paper-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Quantum Gate Optimization Techniques</h3>
+                    <p>Novel approaches to quantum circuit optimization for NISQ devices</p>
+                    <div class="paper-meta">
+                        <span>2024 • Quantum Information Science</span>
+                    </div>
+                </div>
+                
+                <div class="research-paper">
+                    <div class="paper-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Quantum Machine Learning Applications</h3>
+                    <p>Investigating quantum advantage in machine learning algorithms</p>
+                    <div class="paper-meta">
+                        <span>2023 • Nature Quantum Information</span>
+                    </div>
+                </div>
+                
+                <div class="research-paper">
+                    <div class="paper-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Error Mitigation Strategies</h3>
+                    <p>Advanced techniques for quantum error mitigation in near-term devices</p>
+                    <div class="paper-meta">
+                        <span>2023 • Physical Review A</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Quantum Entanglement</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect in the Quantum Realm</h3>
+                    <p>Ready to explore the quantum frontier together? Reach out for collaborations, research opportunities, or quantum computing discussions.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>quantum.dev@universe.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/quantumdev</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/quantumdev</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-atom"></i>
+                            <span>quantum.research.lab</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="quantum-contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Select Topic</option>
+                                <option value="collaboration">Research Collaboration</option>
+                                <option value="project">Project Discussion</option>
+                                <option value="consultation">Quantum Consultation</option>
+                                <option value="speaking">Speaking Opportunity</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Send Quantum Message</span>
+                            <div class="quantum-ripple"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">
+                        <span class="quantum-symbol">Ψ</span>
+                        <span class="logo-text">QuantumDev</span>
+                    </div>
+                    <p>Pushing the boundaries of quantum computing</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 QuantumDev. All rights reserved. | Quantum state prepared with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quantum Simulator Modal -->
+    <div id="simulator-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Quantum Gate Simulator</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe id="simulator-frame" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
